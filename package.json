@@ -10,5 +10,8 @@
   },
   "scripts": {
     "test": "mocha --recursive tests --exit"
+  },
+  "dependencies": {
+    "react": "^16.4.2"
   }
 }
