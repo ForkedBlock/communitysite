@@ -4,6 +4,20 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "immutable": "^3.8.1",
+    "install": "^0.10.1",
+    "npm": "^5.3.0",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-ga": "^2.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-transition-group": "^2.2.0",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "scroll-to-element": "^2.0.0",
+    "three": "^0.87.1",
     "mocha": "5.0.0",
     "unit.js": "2.0.0",
     "supertest": "3.0.0"
@@ -13,6 +27,10 @@
   },
   "dependencies": {
     "express": "^4.16.3",
-    "react": "^16.4.2"
+    "react": "^16.4.2",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
