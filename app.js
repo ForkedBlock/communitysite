@@ -3,9 +3,9 @@ var port = process.env.PORT || 3000,
     fs = require('fs');
 
 var app = http.createServer(function (req, res) {
-  if (req.url.indexOf('/img') != -1) {
-    var filePath = req.url.split('/img')[1];
-    fs.readFile(__dirname + '/public/img' + filePath, function (err, data) {
+  if (req.url.indexOf('/assets/img') != -1) {
+    var filePath = req.url.split('/assets/img')[1];
+    fs.readFile(__dirname + '../assets/img' + filePath, function (err, data) {
       if (err) {
         res.writeHead(404, {'Content-Type': 'text/plain'});
         res.write('Error 404: Resource not found.');
@@ -16,9 +16,9 @@ var app = http.createServer(function (req, res) {
       }  
       res.end();
     });
-  } else if (req.url.indexOf('/js') != -1) {
-    var filePath = req.url.split('/js')[1];
-    fs.readFile(__dirname + '/public/js' + filePath, function (err, data) {
+  } else if (req.url.indexOf('../src/assets/jss') != -1) {
+    var filePath = req.url.split('../src/assets/jss')[1];
+    fs.readFile(__dirname + '../src/assets/jss' + filePath, function (err, data) {
       if (err) {
         res.writeHead(404, {'Content-Type': 'text/plain'});
         res.write('Error 404: Resource not found.');
