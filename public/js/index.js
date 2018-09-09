@@ -101,29 +101,19 @@ var Navigation = React.createClass({ displayName: 'Navigation',
 			React.createElement('div', { id: 'navigation', className: 'Navigation' },
 				React.createElement('nav', null,
 					React.createElement('ul', null,
-						React.createElement('li', null, 'Browse'),
-						React.createElement('li', null, 'My list'),
-						React.createElement('li', null, 'Top picks'),
-						React.createElement('li', null, 'Recent')))));
-
-
-
+						React.createElement('li', null, 'Blog'),
+						React.createElement('li', null, 'Events'),
+						React.createElement('li', null, 'Community'),
+						React.createElement('li', null, 'Current Agenda')))));
 
 	} });
 
-
+/*
 // Search
-var Search = React.createClass({ displayName: 'Search',
-	render: function render() {
-		return (
-			React.createElement('form', { onSubmit: this.props.onSubmit, id: 'search', className: 'Search' },
-				React.createElement('input', { type: 'search', placeholder: 'Search for a title...' })));
-
-
 	} });
+*/
 
-
-// User Profile
+/*// User Profile
 var UserProfile = React.createClass({ displayName: 'UserProfile',
 	render: function render() {
 		return (
@@ -165,6 +155,13 @@ var UserProfile = React.createClass({ displayName: 'UserProfile',
 
 	} });
 
+var Search = React.createClass({ displayName: 'Search',
+	render: function render() {
+		return (
+			React.createElement('form', { onSubmit: this.props.onSubmit, id: 'search', className: 'Search' },
+				React.createElement('input', { type: 'search', placeholder: 'Search for a title...' })));
+
+*/
 
 //////////
 // Hero //
