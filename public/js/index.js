@@ -64,7 +64,7 @@ var Header = React.createClass({ displayName: 'Header',
 			React.createElement('header', { className: 'Header' },
 				React.createElement(Logo, null),
 				React.createElement(Navigation, null),
-				React.createElement(Search, { onSubmit: this.props.onSubmit }),
+				//React.createElement(Search, { onSubmit: this.props.onSubmit }),
 				React.createElement(UserProfile, null)));
 
 
@@ -104,16 +104,23 @@ var Navigation = React.createClass({ displayName: 'Navigation',
 						React.createElement('li', null, 'Blog'),
 						React.createElement('li', null, 'Events'),
 						React.createElement('li', null, 'Community'),
-						React.createElement('li', null, 'Current Agenda')))));
+						React.createElement('li', null, 'Agenda')))));
 
 	} });
 
-/*
+
 // Search
-	} });
-*/
+var Search = React.createClass({ displayName: 'Search',
+	render: function render() {
+		return (
+			React.createElement('form', { onSubmit: this.props.onSubmit, id: 'search', className: 'Search' },
+				React.createElement('input', { type: 'search', placeholder: 'Search for a title...' })));
 
-/*// User Profile
+
+	} });
+
+
+// User Profile
 var UserProfile = React.createClass({ displayName: 'UserProfile',
 	render: function render() {
 		return (
@@ -155,13 +162,6 @@ var UserProfile = React.createClass({ displayName: 'UserProfile',
 
 	} });
 
-var Search = React.createClass({ displayName: 'Search',
-	render: function render() {
-		return (
-			React.createElement('form', { onSubmit: this.props.onSubmit, id: 'search', className: 'Search' },
-				React.createElement('input', { type: 'search', placeholder: 'Search for a title...' })));
-
-*/
 
 //////////
 // Hero //
